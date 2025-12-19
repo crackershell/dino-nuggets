@@ -3,1262 +3,299 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🦕 DINO NUGGETS 🦖 - NC Science Olympiad Division A Complete Study Guide</title>
-    <style>
-        @page {
-            margin: 0.4in;
-            size: letter;
-        }
-        
-        @media print {
-            * {
-                -webkit-print-color-adjust: exact !important;
-                print-color-adjust: exact !important;
-            }
-            body { 
-                margin: 0; 
-                padding: 0.2in;
-                background: white;
-                font-size: 12px;
-            }
-            .page-break { page-break-after: always; }
-            .no-print { display: none !important; }
-            .container { 
-                box-shadow: none; 
-                padding: 0;
-                max-width: 100%;
-                background: white;
-            }
-            header {
-                page-break-after: avoid;
-            }
-            .header {
-                page-break-after: avoid;
-                padding-bottom: 0.1in !important;
-                margin-bottom: 0.1in !important;
-                border-bottom: 2px solid #2c5f2d !important;
-            }
-            h1 { font-size: 1.4em; margin: 0; padding: 0; }
-            .subtitle { font-size: 0.75em; margin: 2px 0 0 0; }
-            h2 { 
-                page-break-after: avoid; 
-                margin-top: 0.15in; 
-                margin-bottom: 0.08in;
-                font-size: 1.1em;
-                padding-left: 0.1in;
-            }
-            h3 { 
-                page-break-after: avoid; 
-                font-size: 0.95em;
-                margin: 0.08in 0;
-            }
-            h4 { 
-                font-size: 0.9em;
-                margin: 0.05in 0;
-            }
-            table { 
-                page-break-inside: avoid; 
-                font-size: 0.75em;
-                margin: 0.05in 0 !important;
-            }
-            th, td { 
-                padding: 0.05in;
-                border: 0.5px solid #ddd;
-            }
-            .activity-section { 
-                page-break-inside: avoid;
-                padding: 0.08in !important;
-                margin: 0.05in 0 !important;
-            }
-            .week-box { 
-                page-break-inside: avoid; 
-                margin: 0.1in 0 !important;
-                padding: 0.1in !important;
-            }
-            .tip-box { 
-                page-break-inside: avoid;
-                padding: 0.08in !important;
-                margin: 0.08in 0 !important;
-            }
-            .checklist { 
-                page-break-inside: avoid;
-                padding: 0.08in !important;
-                margin: 0.05in 0 !important;
-            }
-            .goal-box {
-                padding: 0.1in !important;
-                margin: 0.1in 0 !important;
-                font-size: 0.9em !important;
-            }
-            .learning-strategy {
-                padding: 0.08in !important;
-                margin: 0.05in 0 !important;
-                font-size: 0.85em;
-            }
-            .differentiation-box {
-                padding: 0.08in !important;
-                margin: 0.05in 0 !important;
-                font-size: 0.8em;
-            }
-            .sample-question {
-                padding: 0.05in !important;
-                margin: 0.03in 0 !important;
-                font-size: 0.8em;
-            }
-            .resource-box {
-                padding: 0.08in !important;
-                margin: 0.05in 0 !important;
-                font-size: 0.8em;
-            }
-            p { 
-                margin: 0.05in 0; 
-                line-height: 1.2;
-                font-size: 0.9em;
-            }
-            ul, ol { 
-                margin: 0.03in 0; 
-                padding-left: 0.2in;
-            }
-            li { 
-                margin: 0.02in 0;
-                font-size: 0.9em;
-            }
-            .card-grid {
-                display: none;
-            }
-        }
-        
-        * {
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.5;
-            max-width: 8.5in;
-            margin: 0 auto;
-            padding: 10px;
-            background: #fafafa;
-            color: #333;
-        }
-        
-        .container {
-            background: white;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        
-        .header {
-            text-align: center;
-            border-bottom: 4px solid #2c5f2d;
-            padding-bottom: 10px;
-            margin-bottom: 15px;
-        }
-        
-        h1 {
-            color: #2c5f2d;
-            font-size: 2em;
-            margin: 0;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        
-        .subtitle {
-            color: #666;
-            font-size: 0.9em;
-            margin-top: 5px;
-        }
-        
-        h2 {
-            color: #2c5f2d;
-            border-left: 6px solid #97be11;
-            padding-left: 15px;
-            margin-top: 18px;
-            margin-bottom: 10px;
-            font-size: 1.4em;
-        }
-        
-        h3 {
-            color: #444;
-            margin-top: 12px;
-            margin-bottom: 8px;
-            font-size: 1.1em;
-        }
-        
-        h4 {
-            color: #2c5f2d;
-            margin-top: 8px;
-            margin-bottom: 6px;
-            font-size: 0.95em;
-        }
-        
-        .week-box {
-            background: linear-gradient(135deg, #f5f7fa 0%, #e3e9f3 100%);
-            border-left: 5px solid #2c5f2d;
-            padding: 12px;
-            margin: 12px 0;
-            border-radius: 5px;
-        }
-        
-        .activity-section {
-            background: #fff9e6;
-            padding: 10px;
-            margin: 8px 0;
-            border-radius: 5px;
-            border-left: 4px solid #ffd700;
-        }
-        
-        .resource-box {
-            background: #e8f5e9;
-            padding: 10px;
-            margin: 8px 0;
-            border-radius: 5px;
-            border-left: 4px solid #4caf50;
-            font-size: 0.9em;
-        }
-        
-        .tip-box {
-            background: #fff3cd;
-            border: 2px solid #ffc107;
-            padding: 10px;
-            margin: 12px 0;
-            border-radius: 5px;
-        }
-        
-        .tip-box h3 {
-            margin-top: 0;
-            color: #856404;
-        }
-        
-        .goal-box {
-            background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
-            border: 3px solid #4caf50;
-            padding: 12px;
-            margin: 12px 0;
-            text-align: center;
-            border-radius: 8px;
-            font-size: 1em;
-            font-weight: bold;
-            color: #2c5f2d;
-        }
-        
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 10px 0;
-            font-size: 0.85em;
-        }
-        
-        th, td {
-            border: 1px solid #ddd;
-            padding: 6px;
-            text-align: left;
-        }
-        
-        th {
-            background-color: #2c5f2d;
-            color: white;
-            font-weight: bold;
-        }
-        
-        tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-        
-        ul, ol {
-            margin: 6px 0;
-            padding-left: 20px;
-        }
-        
-        li {
-            margin: 3px 0;
-        }
-        
-        .button {
-            background: #2c5f2d;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 0.95em;
-            margin: 8px 5px;
-        }
-        
-        .button:hover {
-            background: #1e4620;
-        }
-        
-        .print-controls {
-            text-align: center;
-            margin: 12px 0;
-        }
-        
-        .checklist {
-            background: #f0f8ff;
-            padding: 10px;
-            border-left: 4px solid #1e90ff;
-            margin: 8px 0;
-        }
-        
-        .checklist label {
-            display: block;
-            margin: 4px 0;
-            cursor: pointer;
-            font-size: 0.9em;
-        }
-        
-        .checklist input[type="checkbox"] {
-            margin-right: 8px;
-        }
-        
-        .sample-question {
-            background: #f5f5f5;
-            padding: 8px;
-            margin: 6px 0;
-            border-left: 4px solid #97be11;
-            font-family: 'Courier New', monospace;
-            font-size: 0.85em;
-        }
-        
-        .answer {
-            color: #2c5f2d;
-            font-weight: bold;
-        }
-        
-        strong {
-            color: #2c5f2d;
-        }
-        
-        .learning-strategy {
-            background: #e3f2fd;
-            padding: 10px;
-            margin: 8px 0;
-            border-radius: 5px;
-            border-left: 4px solid #2196f3;
-            font-size: 0.9em;
-        }
-        
-        .differentiation-box {
-            background: #f3e5f5;
-            padding: 10px;
-            margin: 8px 0;
-            border-radius: 5px;
-            border-left: 4px solid #9c27b0;
-            font-size: 0.85em;
-        }
-        
-        .standards-link {
-            background: #fce4ec;
-            padding: 10px;
-            margin: 8px 0;
-            border-radius: 4px;
-            font-size: 0.85em;
-        }
-        
-        a {
-            color: #0066cc;
-            text-decoration: none;
-        }
-        
-        a:hover {
-            text-decoration: underline;
-        }
-        
-        .card-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
-            margin: 10px 0;
-        }
-        
-        .card {
-            background: white;
-            border: 2px solid #2c5f2d;
-            padding: 10px;
-            border-radius: 5px;
-        }
-        
-        .success-marker {
-            color: #4caf50;
-            font-weight: bold;
-        }
-        
-        .key-vocab {
-            background: #fff8dc;
-            padding: 10px;
-            margin: 8px 0;
-            border-radius: 4px;
-            border-left: 3px solid #daa520;
-        }
-    </style>
+    <title>Dino Nuggets – NC Science Olympiad</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <!-- TITLE PAGE -->
-        <div class="header">
-            <h1>🦕 DINO NUGGETS 🦖</h1>
-            <div class="subtitle">NC Science Olympiad Division A</div>
-            <div class="subtitle">Complete 6-Week Training Program for Elementary Students</div>
-            <div class="subtitle" style="margin-top: 12px; font-size: 0.95em; color: #2c5f2d; font-weight: bold;">
-                Grade 4-5 | Dinosaurs, Fossils & Paleontology | 2025 Edition
+
+    <header>
+        <div class="container">
+            <h1>Dino Nuggets – NC Science Olympiad</h1>
+            <p class="subtitle">Learn about dinosaurs, fossils, and how they formed!</p>
+            <nav>
+                <ul>
+                    <li><a href="#basics">Event Basics</a></li>
+                    <li><a href="#topics">Key Topics</a></li>
+                    <li><a href="#study-plan">Study Plan</a></li>
+                    <li><a href="#binder">Binder Pages</a></li>
+                    <li><a href="#practice">Practice</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <!-- Event Basics Section -->
+        <section id="basics">
+            <h2>Event Basics</h2>
+            <p><strong>What is Dino Nuggets?</strong></p>
+            <p>In this event, you will show what you know about dinosaurs, fossils, and how fossils are made. You will work with a partner to answer questions and look at pictures or real fossils!</p>
+            
+            <div class="info-box">
+                <h3>Key Details</h3>
+                <ul>
+                    <li><strong>Team Size:</strong> Up to 2 students.</li>
+                    <li><strong>Time:</strong> 60 minutes.</li>
+                    <li><strong>What to bring:</strong> Pencils. You can also bring up to 2 field guides or binders, and magnifying glasses.</li>
+                </ul>
             </div>
-        </div>
+            
+            <p><em>Source: 2026 Division A Event Manual, Dino Nuggets section.</em></p>
+        </section>
 
-        <div class="print-controls no-print" style="margin: 20px 0; text-align: center;">
-            <button class="button" onclick="window.print()">🖨️ Print Complete Study Guide</button>
-            <p style="font-size: 0.85em; color: #666; margin-top: 10px;">
-                💡 Tip: Print as "black & white" to save ink but still maintain readability
-            </p>
-        </div>
+        <!-- Key Topics Section -->
+        <section id="topics">
+            <h2>Key Topics</h2>
+            
+            <article>
+                <h3>3.1 Dinosaurs & Creatures</h3>
+                <p>You need to know about these amazing creatures! You should know their names, what they ate (meat, plants, or both), and when they lived (Triassic, Jurassic, or Cretaceous).</p>
+                
+                <div class="topic-list">
+                    <div class="list-column">
+                        <h4>Dinosaurs</h4>
+                        <ul>
+                            <li>Acrocanthosaurus</li>
+                            <li>Allosaurus</li>
+                            <li>Ankylosaurus</li>
+                            <li>Apatosaurus</li>
+                            <li>Archaeopteryx</li>
+                            <li>Coelophysis</li>
+                            <li>Deinonychus</li>
+                            <li>Diplodocus</li>
+                            <li>Iguanodon</li>
+                            <li>Parasaurolophus</li>
+                            <li>Plateosaurus</li>
+                            <li>Stegosaurus</li>
+                            <li>Triceratops</li>
+                            <li>Tyrannosaurus rex</li>
+                            <li>Velociraptor</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="list-column">
+                        <h4>Other Creatures</h4>
+                        <ul>
+                            <li><strong>Invertebrates:</strong> Asteroids (Sea Stars), Bivalves (Clams), Brachiopods, Cephalopods, Corals, Crustaceans, Echinoids, Trilobites</li>
+                            <li><strong>Vertebrates:</strong> Bony Fish, Ichthyosaurs, Plesiosaurs, Pterosaurs, Sharks & Rays</li>
+                        </ul>
+                        <h4>Trace Fossils & Other</h4>
+                        <ul>
+                            <li>Burrows, Tubes, Tracks, Trails</li>
+                            <li>Coprolites (Poop!)</li>
+                            <li>Amber, Petrified Wood</li>
+                        </ul>
+                    </div>
+                </div>
+                <p><em>Source: 2026 Division A Event Manual, Official Dinosaur & Fossil List.</em></p>
+            </article>
 
-        <div class="goal-box">
-            🎯 PROGRAM GOAL: Achieve 80%+ Accuracy on Practice Tests 🎯
-        </div>
+            <article>
+                <h3>3.2 Fossils & Fossilization</h3>
+                <p><strong>What is a fossil?</strong></p>
+                <p>A fossil is the remains or traces of ancient life. It could be a bone, a shell, or even a footprint!</p>
+                
+                <p><strong>How do fossils form?</strong></p>
+                <p>There are many ways fossils can form. Here are some you should know:</p>
+                <ul>
+                    <li><strong>Petrification:</strong> Turning into stone.</li>
+                    <li><strong>Amber:</strong> Getting stuck in sticky tree resin.</li>
+                    <li><strong>Cast & Mold:</strong> Leaving a shape in the rock.</li>
+                    <li><strong>Trace Fossils:</strong> Things left behind like footprints or poop (coprolites)!</li>
+                </ul>
+            </article>
+        </section>
 
-        <!-- PROGRAM OVERVIEW -->
-        <h2>📋 Program Overview & Structure</h2>
-        
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin: 15px 0;">
-            <div>
-                <p><strong>📅 Duration:</strong> 6 weeks, 1 hour per Saturday session</p>
-                <p><strong>👥 Grade Level:</strong> 4th-5th Grade (Ages 9-11)</p>
-                <p><strong>👨‍👩‍👧 Team Size:</strong> Maximum 2 participants per team</p>
-                <p><strong>🎓 Format:</strong> Hands-on + Testing</p>
+        <!-- Study Plan Section -->
+        <section id="study-plan">
+            <h2>Study Plan</h2>
+            <p>Here is a 4-week plan to help you get ready!</p>
+            
+            <div class="plan-grid">
+                <details class="plan-card">
+                    <summary>Week 1: The Basics</summary>
+                    <ul>
+                        <li>Read the "Dino Nuggets" rules with an adult. <button class="link-btn" onclick="openResource('rules')">Learn more</button></li>
+                        <li>Learn what a fossil is. <button class="link-btn" onclick="openResource('fossils')">Learn more</button></li>
+                        <li>Look at pictures of the dinosaurs on the list. <button class="link-btn" onclick="showBinderImagesOnly()">See pictures</button></li>
+                    </ul>
+                </details>
+                <details class="plan-card">
+                    <summary>Week 2: Fossil Types</summary>
+                    <ul>
+                        <li>Learn the different ways fossils form (like amber or molds). <button class="link-btn" onclick="openResource('fossil-types')">Learn more</button></li>
+                        <li>Practice identifying Invertebrates (animals without backbones). <button class="link-btn" onclick="openResource('invertebrates')">Learn more</button></li>
+                    </ul>
+                </details>
+                <details class="plan-card">
+                    <summary>Week 3: Dino Details</summary>
+                    <ul>
+                        <li>Learn which dinosaurs were Carnivores (meat eaters) or Herbivores (plant eaters). <button class="link-btn" onclick="filterByDiet('Carnivore')">Show carnivores</button> <button class="link-btn" onclick="filterByDiet('Herbivore')">Show herbivores</button></li>
+                        <li>Learn about the Geologic Time Scale (Triassic, Jurassic, Cretaceous). <button class="link-btn" onclick="openResource('geologic-time')">Learn more</button></li>
+                    </ul>
+                </details>
+                <details class="plan-card">
+                    <summary>Week 4: Practice!</summary>
+                    <ul>
+                        <li>Take the practice quiz below. <button class="link-btn" onclick="scrollToSection('practice')">Go to practice</button></li>
+                        <li>Review your binder or field guide. <button class="link-btn" onclick="goToBinderAll()">Open binder</button></li>
+                        <li>Practice working with your partner.</li>
+                    </ul>
+                </details>
             </div>
-            <div>
-                <p><strong>📍 Event:</strong> Dino Nuggets (Division A - Elementary)</p>
-                <p><strong>⏱️ Total Time:</strong> 6 hours of instruction + home study</p>
-                <p><strong>🎯 Target Score:</strong> 80%+ on practice exams</p>
-                <p><strong>✅ Success Indicator:</strong> Mastery of 5 core topics</p>
-            </div>
-        </div>
 
-        <!-- NC STANDARDS & RULES -->
-        <div class="standards-link">
-            <strong>📜 NC Science Standards Alignment:</strong>
-            <ul style="margin: 8px 0; padding-left: 20px;">
-                <li><strong>ESS.4.2 (Earth Systems):</strong> Understand fossils and paleontology</li>
-                <li><strong>LS.4.2 (Life Science):</strong> Evolution and extinction evidence</li>
-                <li><strong>SEP Practices:</strong> Analyzing data, evidence interpretation</li>
-            </ul>
-        </div>
-
-        <div class="tip-box">
-            <h3>📖 2025 Official Event Rules (Summary)</h3>
-            <ul>
-                <li><strong>Allowed Materials:</strong> ONE cheat sheet (8.5" × 11", both sides)</li>
-                <li><strong>Time Limit:</strong> Typically 50 minutes</li>
-                <li><strong>Question Types:</strong> Multiple choice, matching, short answer</li>
-                <li><strong>Scoring:</strong> Points based on accuracy</li>
-                <li><strong>Tie-breaker:</strong> Pre-selected questions from the test</li>
-                <li><strong>Check:</strong> <a href="https://ncscienceolympiad.ncsu.edu/resources/elementary/dino-nuggets/">Official NC Dino Nuggets Page</a> for current rules</li>
-            </ul>
-        </div>
-
-        <div class="page-break"></div>
-
-        <!-- THE 5 CORE TOPICS -->
-        <h2>🎓 The 5 Core Topics You'll Master</h2>
-        
-        <div style="margin: 15px 0;">
-            <div class="card-grid">
-                <div class="card">
-                    <h4>1️⃣ Dinosaur Identification</h4>
-                    <p>Learn 15 key dinosaurs by name, diet, era, and distinctive features</p>
-                    <p><span class="success-marker">✓</span> Week 1</p>
-                </div>
-                <div class="card">
-                    <h4>2️⃣ Fossils & Formation</h4>
-                    <p>Master 5 fossil types and how fossilization happens</p>
-                    <p><span class="success-marker">✓</span> Week 2</p>
-                </div>
-                <div class="card">
-                    <h4>3️⃣ Geologic Time</h4>
-                    <p>Understand the 3 dinosaur eras and extinction events</p>
-                    <p><span class="success-marker">✓</span> Week 3</p>
-                </div>
-                <div class="card">
-                    <h4>4️⃣ Paleontology</h4>
-                    <p>Learn how scientists dig up and study fossils</p>
-                    <p><span class="success-marker">✓</span> Week 4</p>
-                </div>
-                <div class="card">
-                    <h4>5️⃣ Test Practice</h4>
-                    <p>Take two full mock tests and review weak areas</p>
-                    <p><span class="success-marker">✓</span> Weeks 5-6</p>
-                </div>
-                <div class="card">
-                    <h4>🏆 Test Day Ready!</h4>
-                    <p>Build confidence and mental preparation</p>
-                    <p><span class="success-marker">✓</span> Event!</p>
+            <!-- Modal for study resources -->
+            <div id="study-modal" class="study-modal" aria-hidden="true">
+                <div class="study-modal-content">
+                    <button class="modal-close" onclick="closeStudyModal()">×</button>
+                    <div id="study-modal-body"></div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="page-break"></div>
-
-        <!-- MASTER DINOSAUR LIST -->
-        <h2>🦖 MASTER DINOSAUR LIST: 15 Key Species</h2>
-        <p><strong>These 15 dinosaurs appear most frequently on Science Olympiad tests.</strong> Master these first to build confidence!</p>
-
-        <div class="learning-strategy">
-            <strong>🧠 Learning Tip:</strong> Use the "3-Read Method" to learn each dinosaur:
-            <ol>
-                <li>Read aloud the name 3 times</li>
-                <li>Say one word about it (e.g., "Big," "Horns," "Predator")</li>
-                <li>Picture it in your mind</li>
-            </ol>
-        </div>
-
-        <table>
-            <thead>
-                <tr>
-                    <th>Dinosaur</th>
-                    <th>Diet</th>
-                    <th>Period</th>
-                    <th>Key Trait(s)</th>
-                    <th>Size</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><strong>Tyrannosaurus rex</strong></td>
-                    <td>Carnivore</td>
-                    <td>Cretaceous</td>
-                    <td>Massive jaw, tiny arms, apex predator</td>
-                    <td>40 ft</td>
-                </tr>
-                <tr>
-                    <td><strong>Triceratops</strong></td>
-                    <td>Herbivore</td>
-                    <td>Cretaceous</td>
-                    <td>3 horns, frill, rhino-like</td>
-                    <td>30 ft</td>
-                </tr>
-                <tr>
-                    <td><strong>Stegosaurus</strong></td>
-                    <td>Herbivore</td>
-                    <td>Jurassic</td>
-                    <td>17 back plates, spiked tail</td>
-                    <td>30 ft</td>
-                </tr>
-                <tr>
-                    <td><strong>Brachiosaurus</strong></td>
-                    <td>Herbivore</td>
-                    <td>Jurassic</td>
-                    <td>Longest neck, front legs higher</td>
-                    <td>85 ft</td>
-                </tr>
-                <tr>
-                    <td><strong>Velociraptor</strong></td>
-                    <td>Carnivore</td>
-                    <td>Cretaceous</td>
-                    <td>Sickle claw, feathers, smart pack hunter</td>
-                    <td>6 ft</td>
-                </tr>
-                <tr>
-                    <td><strong>Apatosaurus</strong></td>
-                    <td>Herbivore</td>
-                    <td>Jurassic</td>
-                    <td>Super long tail, once called "Brontosaurus"</td>
-                    <td>70 ft</td>
-                </tr>
-                <tr>
-                    <td><strong>Allosaurus</strong></td>
-                    <td>Carnivore</td>
-                    <td>Jurassic</td>
-                    <td>3 clawed fingers, smaller than T. rex</td>
-                    <td>28 ft</td>
-                </tr>
-                <tr>
-                    <td><strong>Ankylosaurus</strong></td>
-                    <td>Herbivore</td>
-                    <td>Cretaceous</td>
-                    <td>Armored body, club tail like a tank</td>
-                    <td>30 ft</td>
-                </tr>
-                <tr>
-                    <td><strong>Coelophysis</strong></td>
-                    <td>Carnivore</td>
-                    <td>Triassic</td>
-                    <td>Small, slender, very early dinosaur</td>
-                    <td>9 ft</td>
-                </tr>
-                <tr>
-                    <td><strong>Diplodocus</strong></td>
-                    <td>Herbivore</td>
-                    <td>Jurassic</td>
-                    <td>Whip-like tail, extremely long</td>
-                    <td>90 ft</td>
-                </tr>
-                <tr>
-                    <td><strong>Parasaurolophus</strong></td>
-                    <td>Herbivore</td>
-                    <td>Cretaceous</td>
-                    <td>Fancy crest on head like a horn</td>
-                    <td>30 ft</td>
-                </tr>
-                <tr>
-                    <td><strong>Acrocanthosaurus</strong></td>
-                    <td>Carnivore</td>
-                    <td>Cretaceous</td>
-                    <td>Sails on back, found in North Carolina!</td>
-                    <td>30 ft</td>
-                </tr>
-                <tr>
-                    <td><strong>Plateosaurus</strong></td>
-                    <td>Herbivore</td>
-                    <td>Triassic</td>
-                    <td>Early ancestor of giant sauropods</td>
-                    <td>26 ft</td>
-                </tr>
-                <tr>
-                    <td><strong>Archaeopteryx</strong></td>
-                    <td>Omnivore</td>
-                    <td>Jurassic</td>
-                    <td>Feathers + wings + teeth = dinosaur-bird link!</td>
-                    <td>2 ft</td>
-                </tr>
-                <tr>
-                    <td><strong>Spinosaurus</strong></td>
-                    <td>Carnivore</td>
-                    <td>Cretaceous</td>
-                    <td>Sail on back, crocodile snout, swims</td>
-                    <td>50 ft</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <div class="key-vocab">
-            <strong>🔑 Quick ID Shortcuts:</strong>
-            <ul style="margin: 8px 0; padding-left: 20px;">
-                <li><strong>Carnivores (Meat-eaters):</strong> SHARP teeth, CLAWS, bipedal (2 legs), aggressive posture</li>
-                <li><strong>Herbivores (Plant-eaters):</strong> FLAT teeth, LONG necks (many), defense features (armor/horns/plates), 4 or 2 legs</li>
-                <li><strong>NOT Dinosaurs (Common trick!):</strong> Pteranodon (flying reptile), Plesiosaur (swimming reptile), Dimetrodon (sail-back synapsid)</li>
-            </ul>
-        </div>
-
-        <div class="differentiation-box">
-            <strong>📊 For Different Learning Levels:</strong>
-            <ul style="margin: 8px 0; padding-left: 20px; font-size: 0.9em;">
-                <li><strong>Struggling:</strong> Focus on these 6 "must-know" dinos: T. rex, Triceratops, Stegosaurus, Brachiosaurus, Velociraptor, Ankylosaurus</li>
-                <li><strong>Advanced:</strong> Research additional details: How did Stegosaurus use its plates? Which came first in time?</li>
-            </ul>
-        </div>
-
-        <div class="page-break"></div>
-
-        <!-- FOSSIL TYPES -->
-        <h2>🪨 The 5 Fossil Types You Must Know</h2>
-        
-        <div class="learning-strategy">
-            <strong>🧠 Memory Trick:</strong> Think "BMCTC" = <strong>B</strong>ody, <strong>M</strong>old, <strong>C</strong>ast, <strong>T</strong>race, <strong>C</strong>arbonized
-        </div>
-
-        <table>
-            <thead>
-                <tr>
-                    <th>Type</th>
-                    <th>Simple Definition</th>
-                    <th>How It Forms</th>
-                    <th>Real-World Example</th>
-                    <th>Test Clue</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><strong>Body Fossil</strong></td>
-                    <td>Real part of the organism</td>
-                    <td>Rapid burial + minerals replace bone</td>
-                    <td>Actual dinosaur bone in rock</td>
-                    <td>Says "original" or "actual"</td>
-                </tr>
-                <tr>
-                    <td><strong>Mold</strong></td>
-                    <td>Empty hole/impression</td>
-                    <td>Organism dissolves, leaves hollow space</td>
-                    <td>Snail shell shape in rock</td>
-                    <td>Says "hollow" or "empty"</td>
-                </tr>
-                <tr>
-                    <td><strong>Cast</strong></td>
-                    <td>Solid copy/replica</td>
-                    <td>Minerals fill mold and harden</td>
-                    <td>Plaster dinosaur footprint model</td>
-                    <td>Says "replica" or "filled"</td>
-                </tr>
-                <tr>
-                    <td><strong>Trace Fossil</strong></td>
-                    <td>Evidence of behavior (NO body)</td>
-                    <td>Footprints, burrows, poop preserved</td>
-                    <td>T. rex footprint, dino poop</td>
-                    <td>Says "footprint" or "track"</td>
-                </tr>
-                <tr>
-                    <td><strong>Carbonized Film</strong></td>
-                    <td>Thin carbon outline</td>
-                    <td>Heat/pressure leave black carbon line</td>
-                    <td>Ancient leaf outline on shale</td>
-                    <td>Says "outline" or "thin layer"</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <div class="key-vocab">
-            <strong>📝 Fossilization Process (5 Simple Steps):</strong>
-            <ol style="margin: 8px 0; padding-left: 20px;">
-                <li><strong>Death & Rapid Burial:</strong> Animal dies, gets quickly covered in sand/mud</li>
-                <li><strong>Oxygen Removed:</strong> No air = bacteria can't eat the bones</li>
-                <li><strong>Minerals Replace Parts:</strong> Water carries minerals that replace bone material</li>
-                <li><strong>Rock Forms:</strong> Layers compress over millions of years into hard rock</li>
-                <li><strong>Erosion Exposes It:</strong> Wind and rain wear away rock, fossil appears!</li>
-            </ol>
-        </div>
-
-        <div class="differentiation-box">
-            <strong>🤔 Why Don't All Dinosaurs Become Fossils?</strong>
-            <p style="margin: 8px 0;"><strong>Best case needed:</strong> Rapid burial + water + minerals + time. Missing even one = no fossil!</p>
-            <ul style="margin: 8px 0; padding-left: 20px; font-size: 0.9em;">
-                <li>❌ Slow death = scavengers eat it</li>
-                <li>❌ Dry climate = no water for minerals</li>
-                <li>❌ Soft parts only = decay too quickly</li>
-                <li>❌ Exposed to air = bacteria destroy it</li>
-            </ul>
-        </div>
-
-        <div class="page-break"></div>
-
-        <!-- GEOLOGIC TIME -->
-        <h2>🕰️ The Geologic Time Scale: Dinosaur Eras</h2>
-        
-        <div class="tip-box">
-            <h3>⏰ Remember: MJ<strong>C</strong> = Mya Jurassic Cretaceous (or "Mesozoic Eras")</h3>
-            <p>From oldest to newest: <strong>T</strong>riassic → <strong>J</strong>urassic → <strong>C</strong>retaceous</p>
-        </div>
-
-        <table>
-            <thead>
-                <tr>
-                    <th>Era</th>
-                    <th>When (mya)*</th>
-                    <th>Length</th>
-                    <th>Star Dinosaurs</th>
-                    <th>Climate</th>
-                    <th>Key Event</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><strong>TRIASSIC</strong></td>
-                    <td>250-200</td>
-                    <td>50 million yrs</td>
-                    <td>Coelophysis, Plateosaurus</td>
-                    <td>Hot & dry</td>
-                    <td>Dinosaurs appear!</td>
-                </tr>
-                <tr>
-                    <td><strong>JURASSIC</strong></td>
-                    <td>200-135</td>
-                    <td>65 million yrs</td>
-                    <td>Diplodocus, Stegosaurus, Brachiosaurus</td>
-                    <td>Warm & humid</td>
-                    <td>Largest land animals ever</td>
-                </tr>
-                <tr>
-                    <td><strong>CRETACEOUS</strong></td>
-                    <td>135-66</td>
-                    <td>69 million yrs</td>
-                    <td>T. rex, Triceratops, Velociraptor</td>
-                    <td>Tropical</td>
-                    <td>Extinction event</td>
-                </tr>
-            </tbody>
-        </table>
-        <p style="font-size: 0.85em;"><strong>*mya = millions of years ago</strong></p>
-
-        <div class="key-vocab">
-            <strong>🌍 What Happened in Each Era:</strong>
-            <ul style="margin: 8px 0; padding-left: 20px;">
-                <li><strong>TRIASSIC (First Dinos):</strong> First dinosaurs appear but are SMALL. Pangaea (all continents connected)</li>
-                <li><strong>JURASSIC (Golden Age):</strong> HUGE sauropods roam. Continents start splitting. Birds begin to evolve</li>
-                <li><strong>CRETACEOUS (Variety & End):</strong> Most types of dinos ever. Flowers appear. Then... BOOM (extinction)</li>
-            </ul>
-        </div>
-
-        <div class="learning-strategy">
-            <strong>🧠 Quick Memory Trick:</strong> "TV Dinner = Triassic Variety, Jurassic Diversity, Cretaceous Extinction"
-        </div>
-
-        <h3>💥 The K-Pg Extinction Event (66 Million Years Ago)</h3>
-        
-        <table style="font-size: 0.8em;">
-            <thead>
-                <tr>
-                    <th>Cause</th>
-                    <th>Evidence</th>
-                    <th>What Happened</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><strong>Asteroid Impact</strong> ☄️</td>
-                    <td>Iridium layer found worldwide, Chicxulub crater in Mexico</td>
-                    <td>Explosion → darkness → cold → starvation → 75% species die</td>
-                </tr>
-                <tr>
-                    <td><strong>Volcanism</strong> 🌋</td>
-                    <td>Massive Deccan Traps lava flows in India</td>
-                    <td>Ash blocks sun → toxic gases → long winter → species die</td>
-                </tr>
-                <tr>
-                    <td><strong>Both!</strong> ☄️🌋</td>
-                    <td>Both happened at same time (horrible luck!)</td>
-                    <td>Double catastrophe = nearly total extinction</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <div class="tip-box">
-            <h3>🐦 But Birds Survived! (They're dinosaurs too!)</h3>
-            <p><strong>Modern birds ARE living dinosaurs!</strong> Small feathered dinosaurs survived because they could:</p>
-            <ul>
-                <li>Eat seeds and small prey</li>
-                <li>Hide in small spaces</li>
-                <li>Stay warm with feathers</li>
-                <li>Adapt quickly</li>
-            </ul>
-            <p style="margin-top: 10px;"><strong>So the T-rex is extinct, but its cousin the chicken is alive! 🐔</strong></p>
-        </div>
-
-        <div class="page-break"></div>
-
-        <!-- PALEONTOLOGY -->
-        <h2>🔨 How Paleontologists Work: Tools & Sites</h2>
-
-        <h3>Paleontologist's Toolkit</h3>
-        
-        <div class="learning-strategy">
-            <strong>🧠 Learning Tip:</strong> Match each tool to what you've seen archaeologists use on TV!
-        </div>
-
-        <table style="font-size: 0.85em;">
-            <thead>
-                <tr>
-                    <th>Tool</th>
-                    <th>What It Does</th>
-                    <th>Why It Matters</th>
-                    <th>Real Example</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><strong>Soft Brush</strong> 🪥</td>
-                    <td>Gently dust off sediment</td>
-                    <td>Prevents damage to delicate bones</td>
-                    <td>Cleaning a dinosaur jaw bone</td>
-                </tr>
-                <tr>
-                    <td><strong>Chisel & Hammer</strong> 🔨</td>
-                    <td>Break rock around fossil</td>
-                    <td>Must tap gently, never smash!</td>
-                    <td>Freeing fossil from surrounding rock</td>
-                </tr>
-                <tr>
-                    <td><strong>Sieve/Screen</strong> ⛓️</td>
-                    <td>Filter sediment for tiny items</td>
-                    <td>Catches small teeth, bones, gems</td>
-                    <td>Sorting sand to find small fossils</td>
-                </tr>
-                <tr>
-                    <td><strong>Measuring Tape</strong> 📏</td>
-                    <td>Record exact position & depth</td>
-                    <td>Deep fossils = older fossils</td>
-                    <td>Measuring how far down a fossil was buried</td>
-                </tr>
-                <tr>
-                    <td><strong>Trowel</strong> 🪓</td>
-                    <td>Scoop sediment layer by layer</td>
-                    <td>Preserves what layer fossil is in</td>
-                    <td>Carefully removing dirt around remains</td>
-                </tr>
-                <tr>
-                    <td><strong>Grid/Map</strong> 📐</td>
-                    <td>Mark exact location</td>
-                    <td>Scientific precision for records</td>
-                    <td>Marking a fossil's spot on a grid</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <h3>Famous Fossil Sites (Where Dinos Are Found)</h3>
-
-        <table style="font-size: 0.85em;">
-            <thead>
-                <tr>
-                    <th>Site Name</th>
-                    <th>Location</th>
-                    <th>Era</th>
-                    <th>Famous Fossils</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><strong>Hell Creek Formation</strong></td>
-                    <td>Montana/Wyoming, USA 🇺🇸</td>
-                    <td>Late Cretaceous</td>
-                    <td>T. rex, Triceratops, small mammals</td>
-                </tr>
-                <tr>
-                    <td><strong>Morrison Formation</strong></td>
-                    <td>Colorado/Wyoming, USA 🇺🇸</td>
-                    <td>Late Jurassic</td>
-                    <td>Brachiosaurus, Diplodocus, Allosaurus</td>
-                </tr>
-                <tr>
-                    <td><strong>Yixian Formation</strong></td>
-                    <td>China 🇨🇳</td>
-                    <td>Early Cretaceous</td>
-                    <td>Feathered dinosaurs, early birds</td>
-                </tr>
-                <tr>
-                    <td><strong>Dinosaur Provincial Park</strong></td>
-                    <td>Alberta, Canada 🇨🇦</td>
-                    <td>Late Cretaceous</td>
-                    <td>Hadrosaurs, ceratopsians, many dinos</td>
-                </tr>
-                <tr>
-                    <td><strong>Gobi Desert</strong></td>
-                    <td>Mongolia 🇲🇳</td>
-                    <td>Cretaceous</td>
-                    <td>Velociraptor, Protoceratops, dinosaur eggs</td>
-                </tr>
-                <tr>
-                    <td><strong>NC: Acrocanthosaurus Track Site</strong></td>
-                    <td>North Carolina 🇺🇸</td>
-                    <td>Early Cretaceous</td>
-                    <td>Acrocanthosaurus footprints & fossils</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <div class="key-vocab">
-            <strong>👨‍🔬 How Paleontologists Dig (5-Step Process):</strong>
-            <ol style="margin: 8px 0; padding-left: 20px;">
-                <li><strong>Survey:</strong> Look for exposed rock layers with visible fossils</li>
-                <li><strong>Excavate:</strong> Carefully dig in layers (deepest = oldest!)</li>
-                <li><strong>Document:</strong> Take photos, make maps, measure everything</li>
-                <li><strong>Extract:</strong> Use tools to carefully remove fossil from rock</li>
-                <li><strong>Analyze:</strong> Clean fossil, identify species, date it, publish results</li>
-            </ol>
-        </div>
-
-        <div class="page-break"></div>
-
-        <!-- 6-WEEK SCHEDULE SUMMARY -->
-        <h2>📅 Your 6-Week Training Schedule</h2>
-
-        <div style="background: #f0f0f0; padding: 12px; margin: 12px 0; border-radius: 5px;">
-            <p><strong>⚡ Quick Overview:</strong> Each session is <strong>1 hour (60 minutes)</strong> on Saturday. Includes games, experiments, and quizzes!</p>
-        </div>
-
-        <table style="font-size: 0.9em;">
-            <thead>
-                <tr>
-                    <th>Week</th>
-                    <th>Topic</th>
-                    <th>What You'll Learn</th>
-                    <th>Main Activity</th>
-                    <th>Assessment</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><strong>1</strong></td>
-                    <td>Dinosaur ID</td>
-                    <td>15 dinos by name, diet, era</td>
-                    <td>Sorting relay race</td>
-                    <td>10-Q quiz</td>
-                </tr>
-                <tr>
-                    <td><strong>2</strong></td>
-                    <td>Fossil Types</td>
-                    <td>5 types, how fossils form</td>
-                    <td>Make mold & cast demo</td>
-                    <td>10-Q quiz</td>
-                </tr>
-                <tr>
-                    <td><strong>3</strong></td>
-                    <td>Geologic Time</td>
-                    <td>3 eras, extinction theories</td>
-                    <td>Build 6-meter timeline</td>
-                    <td>10-Q quiz</td>
-                </tr>
-                <tr>
-                    <td><strong>4</strong></td>
-                    <td>Paleontology</td>
-                    <td>Tools & famous fossil sites</td>
-                    <td>Mock fossil dig</td>
-                    <td>10-Q quiz</td>
-                </tr>
-                <tr>
-                    <td><strong>5</strong></td>
-                    <td>Mock Test #1</td>
-                    <td>Review + test practice</td>
-                    <td>25-question timed test</td>
-                    <td>Score & review weak areas</td>
-                </tr>
-                <tr>
-                    <td><strong>6</strong></td>
-                    <td>Final Review + Test #2</td>
-                    <td>Consolidate all topics</td>
-                    <td>30-question test + celebration</td>
-                    <td>Score & confidence boost</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <div class="page-break"></div>
-
-        <!-- LEARNING SCIENCE BEST PRACTICES -->
-        <h2>🧠 Research-Based Learning Strategies</h2>
-
-        <div class="learning-strategy">
-            <h3>1️⃣ Spaced Repetition (Remembering Better)</h3>
-            <p><strong>The Brain Rule:</strong> You forget quickly unless you review. So we review constantly!</p>
-            <ul>
-                <li><strong>Week 1-4:</strong> Each session starts with 5-min "Quick Drill" on ALL previous topics</li>
-                <li><strong>Week 5:</strong> Full review before mock test</li>
-                <li><strong>Week 6:</strong> Final review + celebration</li>
-            </ul>
-            <p style="margin-top: 10px;"><strong>What to do at home:</strong> Review one topic for 5 minutes each night. It only takes 5 minutes!</p>
-        </div>
-
-        <div class="learning-strategy">
-            <h3>2️⃣ Multi-Sensory Learning (Using All Your Senses)</h3>
-            <p><strong>The Brain Rule:</strong> You learn better when you SEE, HEAR, TOUCH, and DO things.</p>
-            <ul>
-                <li><strong>See:</strong> Watch dinosaur videos, look at fossil pictures</li>
-                <li><strong>Hear:</strong> Say dino names aloud, listen to explanations</li>
-                <li><strong>Touch:</strong> Make molds & casts, dig in sandbox, hold fossil replicas</li>
-                <li><strong>Do:</strong> Games, races, sorting activities, writing answers</li>
-            </ul>
-        </div>
-
-        <div class="learning-strategy">
-            <h3>3️⃣ Retrieval Practice (Testing Yourself)</h3>
-            <p><strong>The Brain Rule:</strong> Tests HELP you learn better than just reading.</p>
-            <ul>
-                <li>Weekly quizzes: Get feedback on weak areas</li>
-                <li>Two mock tests: Build test-taking skills</li>
-                <li>Flashcard drills: Quick recall practice</li>
-            </ul>
-        </div>
-
-        <div class="learning-strategy">
-            <h3>4️⃣ Elaboration (Explaining to Others)</h3>
-            <p><strong>The Brain Rule:</strong> When you teach someone else, YOU learn better.</p>
-            <ul>
-                <li><strong>At home:</strong> Teach your parent about what you learned</li>
-                <li><strong>In class:</strong> Explain your answer to a partner</li>
-                <li><strong>Take-home assignments:</strong> Draw and explain concepts</li>
-            </ul>
-        </div>
-
-        <div class="page-break"></div>
-
-        <!-- SAMPLE QUESTIONS -->
-        <h2>❓ Sample Test Questions (Practice Your Skills)</h2>
-
-        <div class="learning-strategy">
-            <strong>🧠 Test-Taking Tips:</strong>
-            <ul>
-                <li>✓ Read each question TWICE</li>
-                <li>✓ Look for KEY WORDS ("which," "not," "best")</li>
-                <li>✓ Eliminate obviously wrong answers first</li>
-                <li>✓ Skip hard questions, come back later</li>
-                <li>✓ Show your work on short answers</li>
-            </ul>
-        </div>
-
-        <h3>Sample Multiple Choice</h3>
-
-        <div class="sample-question">
-            <p><strong>Q1:</strong> Which dinosaur had three horns and a large bony frill to protect itself?</p>
-            <p>a) Stegosaurus (had plates)  
-            <br>b) Triceratops (3 horns + frill) ← <span class="answer">CORRECT</span>  
-            <br>c) Ankylosaurus (had armor)  
-            <br>d) Spinosaurus (had sail)</p>
-            <p><strong>Why?</strong> "Three horns" = Tri (three) + ceratops (horn-face)</p>
-        </div>
-
-        <div class="sample-question">
-            <p><strong>Q2:</strong> Which fossil type is a hollow impression left after an organism dissolves?</p>
-            <p>a) Body fossil  
-            <br>b) Cast  
-            <br>c) Mold ← <span class="answer">CORRECT</span>  
-            <br>d) Trace fossil</p>
-            <p><strong>Why?</strong> "Hollow impression" = empty space left behind = mold</p>
-        </div>
-
-        <h3>Sample Matching</h3>
-
-        <div class="sample-question">
-            <p><strong>Match each dino to its diet:</strong></p>
-            <p>___ Brachiosaurus → a) Carnivore  
-            <br>___ T. rex → b) Herbivore  
-            <br>___ Velociraptor → c) Omnivore</p>
-            <p><span class="answer">Answers: Brachiosaurus=b (herbivore, long neck eats leaves), T. rex=a (carnivore, sharp teeth predator), Velociraptor=a (carnivore, hunted prey)</span></p>
-        </div>
-
-        <h3>Sample Short Answer</h3>
-
-        <div class="sample-question">
-            <p><strong>Q:</strong> Explain one reason why not all dead dinosaurs became fossils.</p>
-            <p><span class="answer">Good answer examples:</span>
-            <br>- "The dinosaur wasn't buried quickly, so scavengers ate it"  
-            <br>- "There was no water, so minerals couldn't replace the bones"  
-            <br>- "Bacteria broke down the bones because there was air"  
-            <br>- "The bones were soft so they decayed too fast"</p>
-        </div>
-
-        <div class="page-break"></div>
-
-        <!-- ASSESSMENT & SUCCESS -->
-        <h2>📊 How You'll Know You're Ready</h2>
-
-        <table>
-            <thead>
-                <tr>
-                    <th>Score</th>
-                    <th>%</th>
-                    <th>Meaning</th>
-                    <th>Action</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>9-10 / 10</td>
-                    <td>90-100%</td>
-                    <td>🏆 Excellent! You've got it!</td>
-                    <td>Move forward with confidence</td>
-                </tr>
-                <tr>
-                    <td>8 / 10</td>
-                    <td>80%</td>
-                    <td>✅ Good! Ready to advance</td>
-                    <td>Continue to next topic</td>
-                </tr>
-                <tr>
-                    <td>7 / 10</td>
-                    <td>70%</td>
-                    <td>⚠️ Getting there, needs review</td>
-                    <td>Review this topic more</td>
-                </tr>
-                <tr>
-                    <td>&lt; 7 / 10</td>
-                    <td>&lt; 70%</td>
-                    <td>🔄 Not ready yet</td>
-                    <td>Reteach this topic</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <div class="goal-box" style="margin-top: 20px;">
-            <strong>🎯 Your Goal: 80%+ on Both Mock Tests = Event Ready!</strong>
-        </div>
-
-        <div class="tip-box" style="margin-top: 20px;">
-            <h3>✅ Event Day Readiness Checklist</h3>
-            <ul>
-                <li><strong>✓ Know 15 dinos:</strong> Can name and describe each one</li>
-                <li><strong>✓ Know 5 fossil types:</strong> Can tell the difference between them</li>
-                <li><strong>✓ Know 3 geologic eras:</strong> Can place dinosaurs on a timeline</li>
-                <li><strong>✓ Know paleontology tools:</strong> Can explain what each does</li>
-                <li><strong>✓ Know extinction theories:</strong> Understand asteroid & volcanic evidence</li>
-                <li><strong>✓ Passed mock tests:</strong> Score 80%+ on practice exams</li>
-                <li><strong>✓ Created cheat sheet:</strong> Have allowed reference ready</li>
-                <li><strong>✓ Confident:</strong> Believe in yourself!</li>
-            </ul>
-        </div>
-
-        <div class="page-break"></div>
-
-        <!-- MATERIALS NEEDED -->
-        <h2>🛒 Materials Checklist</h2>
-
-        <div class="checklist">
-            <h3>📚 Print Materials (Get Ready Before Week 1)</h3>
-            <label><input type="checkbox"> 15 dinosaur cards (name, silhouette, fun fact)</label>
-            <label><input type="checkbox"> Fossil type sorting cards (5 types)</label>
-            <label><input type="checkbox"> 6-meter timeline paper</label>
-            <label><input type="checkbox"> Extinction evidence cards</label>
-            <label><input type="checkbox"> Paleontologist tool cards</label>
-            <label><input type="checkbox"> Famous fossil site cards</label>
-            <label><input type="checkbox"> Weekly quiz sheets (4 total)</label>
-            <label><input type="checkbox"> Mock Test 1 (25 questions)</label>
-            <label><input type="checkbox"> Mock Test 2 (30 questions)</label>
-            <label><input type="checkbox"> Progress tracker sheets</label>
-        </div>
-
-        <div class="checklist">
-            <h3>🎨 Hands-On Materials (~$50-75 budget)</h3>
-            <label><input type="checkbox"> Modeling clay (1 lb)</label>
-            <label><input type="checkbox"> Plaster of paris (small box)</label>
-            <label><input type="checkbox"> Plastic sandbox or tub + sand (2×2 ft)</label>
-            <label><input type="checkbox"> Paleontology tool kit (brushes, trowels, sieve)</label>
-            <label><input type="checkbox"> Fossil replicas or toy dinosaurs (10-15)</label>
-            <label><input type="checkbox"> Shells, bones, rocks for activities</label>
-            <label><input type="checkbox"> String/tape for grid marking</label>
-            <label><input type="checkbox"> Measuring tape</label>
-            <label><input type="checkbox"> Clear jar for demonstrations</label>
-        </div>
-
-        <div class="checklist">
-            <h3>⭐ Optional Enhancements</h3>
-            <label><input type="checkbox"> Dinosaur skeleton poster</label>
-            <label><input type="checkbox"> Geologic time scale chart</label>
-            <label><input type="checkbox"> Fossil types reference poster</label>
-            <label><input type="checkbox"> Dinosaur-themed snacks</label>
-            <label><input type="checkbox"> Timer/stopwatch</label>
-            <label><input type="checkbox"> Safety goggles</label>
-        </div>
-
-        <div class="page-break"></div>
-
-        <!-- FINAL MOTIVATION -->
-        <div class="header" style="border-top: 4px solid #2c5f2d; border-bottom: none; padding-top: 20px; margin-top: 30px;">
-            <h1 style="font-size: 2em;">🦕 YOU'VE GOT THIS! 🦖</h1>
-            <div class="subtitle" style="font-size: 1.2em; color: #2c5f2d; font-weight: bold;">
-                6 Weeks to Mastery. 80%+ Accuracy. Science Olympiad Ready!
+        <!-- Binder Section -->
+        <section id="binder">
+            <div class="binder-header-row">
+                <h2>Dino Binder Pages</h2>
+                <div style="display:flex; gap:10px; align-items:center;">
+                    <button id="reload-binder" class="action-btn">🔄 Reload Binder Data</button>
+                    <button onclick="window.print()" class="action-btn">🖨️ Print for Binder</button>
+                </div>
             </div>
-        </div>
+            <p>Review these detailed profiles for your binder!</p>
+            
+            <!-- Search & Filter -->
+            <div class="binder-controls">
+                <input type="text" id="binder-search" placeholder="Search dinosaurs..." onkeyup="filterBinder()">
+                <select id="binder-diet-filter" onchange="filterBinder()">
+                    <option value="all">All Diets</option>
+                    <option value="Carnivore">Carnivore</option>
+                    <option value="Herbivore">Herbivore</option>
+                </select>
+                <select id="binder-period-filter" onchange="filterBinder()">
+                    <option value="all">All Periods</option>
+                    <option value="Triassic">Triassic</option>
+                    <option value="Jurassic">Jurassic</option>
+                    <option value="Cretaceous">Cretaceous</option>
+                </select>
+            </div>
 
-        <div style="margin: 20px 0; padding: 15px; background: #e8f5e9; border-radius: 10px; text-align: center; border: 2px solid #4caf50;">
-            <p style="font-size: 1.05em; line-height: 1.8;">
-                <strong>You will learn:</strong><br>
-                ✅ 15 Amazing Dinosaurs<br>
-                ✅ 5 Types of Fossils<br>
-                ✅ How Earth's Continents Moved<br>
-                ✅ Why Dinosaurs Went Extinct<br>
-                ✅ How Scientists Dig Up the Past<br><br>
-                <span style="color: #2c5f2d; font-weight: bold;">And you'll be 100% ready for the competition!</span>
-            </p>
-        </div>
+            <div id="binder-container" class="binder-grid">
+                <!-- Binder cards will be generated here -->
+            </div>
+        </section>
 
-        <div style="margin: 20px 0; padding: 15px; background: #f5f5f5; border-radius: 10px; text-align: center;">
-            <p style="font-size: 0.9em; color: #666; line-height: 1.6;">
-                <strong>Document Created:</strong> December 2025<br>
-                <strong>For:</strong> NC Science Olympiad Division A - Dino Nuggets<br>
-                <strong>Grade Levels:</strong> 4th-5th Grade<br>
-                <strong>Total Prep:</strong> 6 Saturdays × 1 hour + home study
-            </p>
-        </div>
+        <!-- Practice Section -->
+        <section id="practice">
+            <h2>Interactive Practice</h2>
+            <p class="warning-text"><strong>Note:</strong> These are practice questions, not official NCSO questions.</p>
 
-        <div class="print-controls no-print" style="margin-top: 20px; text-align: center;">
-            <button class="button" onclick="window.print()">🖨️ Print Complete Study Guide</button>
-        </div>
+            <!-- Mode Selection -->
+            <div id="mode-selection" class="mode-container">
+                <div class="mode-card">
+                    <h3>🦕 Quick Quiz</h3>
+                    <p>Answer a few random questions to test your knowledge.</p>
+                    <button onclick="initQuiz()" class="action-btn">Start Quiz</button>
+                </div>
+                <div class="mode-card">
+                    <h3>🧩 Matching Game</h3>
+                    <p>Match terms and definitions.</p>
+                    <button onclick="initMatchingGame()" class="action-btn">Start Matching</button>
+                </div>
+                <div class="mode-card highlight-card">
+                    <h3>🏆 Mock Station Run</h3>
+                    <p>Simulate the real event! Visit 10 stations and solve problems.</p>
+                    <button onclick="startStationRun()" class="action-btn primary-btn">Start Station Run</button>
+                </div>
+            </div>
 
-    </div>
+            <!-- Quiz Container (Hidden by default) -->
+            <div id="quiz-container" class="hidden">
+                <div class="header-row">
+                    <h3>Practice Quiz</h3>
+                    <button onclick="showModeSelection()" class="text-btn">Exit</button>
+                </div>
+                <div id="quiz-ui">
+                    <div id="question-text">Question goes here...</div>
+                    <div id="choices-container"></div>
+                    <button id="check-answer-btn">Check Answer</button>
+                    <div id="feedback" class="hidden"></div>
+                    <div id="score-display">Score: 0</div>
+                    <button id="next-question-btn" class="hidden">Next Question</button>
+                </div>
+            </div>
+
+            <!-- Matching Container (Hidden by default) -->
+            <div id="matching-container" class="hidden">
+                <div class="header-row">
+                    <h3>🧩 Vocabulary Match</h3>
+                    <button onclick="showModeSelection()" class="text-btn">Exit</button>
+                </div>
+                <p class="instruction-text"><strong>How to play:</strong> Tap a word (like "Carnivore"), then tap its meaning (like "Eats Meat"). Find all the pairs!</p>
+                <div id="matching-game">
+                    <!-- Matching game will be generated here -->
+                </div>
+                <div id="matching-feedback" class="hidden"></div>
+                <button onclick="initMatchingGame()" class="action-btn" style="margin-top: 20px; font-size: 0.9em;">🔄 Restart Game</button>
+            </div>
+
+            <!-- Station Run Container (Hidden by default) -->
+            <div id="station-container" class="hidden">
+                <div class="station-header">
+                    <div class="station-info">
+                        <span id="station-number">Station 1 of 10</span>
+                        <span id="station-timer">Time: 00:00</span>
+                    </div>
+                    <button onclick="quitStationRun()" class="text-btn">Quit</button>
+                </div>
+                
+                <div class="station-card">
+                    <div class="station-type-badge" id="station-type">Identification</div>
+                    <div class="station-content">
+                        <div id="station-visual" class="station-visual">
+                            <!-- Image or Description placeholder -->
+                        </div>
+                        <div id="station-question" class="station-question">
+                            What is this specimen?
+                        </div>
+                        <div id="station-options" class="station-options">
+                            <!-- Options generated here -->
+                        </div>
+                    </div>
+                    <div id="station-feedback" class="hidden"></div>
+                    <button id="station-next-btn" class="hidden">Next Station</button>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Resources Section -->
+        <section id="resources">
+            <h2>Resources</h2>
+            <ul class="resource-list">
+                <li>
+                    <a href="resources/2026 Division A Event Manual - Google Docs.pdf" target="_blank">2026 Division A Event Manual (PDF)</a>
+                    <p>Read the Dino Nuggets rules with an adult coach.</p>
+                </li>
+                <li>
+                    <a href="resources/2026 NCSO Event Chart - Google Slides.pdf" target="_blank">2026 NCSO Event Chart (PDF)</a>
+                    <p>See where Dino Nuggets fits in the list of events.</p>
+                </li>
+                <li>
+                    <a href="resources/Dino-Nuggets-2025.pdf" target="_blank">Dino Nuggets 2025 Resource (PDF)</a>
+                    <p>Extra background and practice ideas.</p>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Created for Dino Nuggets Practice. Not affiliated with NCSO.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,7 @@
+# Ignore local generated PDF export
+Dino-Nuggets-2025.pdf
+
+# Node and system files (common ignores)
+node_modules/
+.DS_Store
+.env
