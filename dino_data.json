@@ -1,6 +1,7 @@
 [
   {
     "name": "Acrocanthosaurus",
+    "period": "Cretaceous",
     "description": "Large bipedal carnivore, known for high neural spines forming a ridge down its back.",
     "footprints": "Large, 3-toed theropod tracks; famous trackways in Paluxy River, TX.",
     "teeth": "Curved, serrated, blade-like for slicing meat.",
@@ -14,6 +15,7 @@
   },
   {
     "name": "Allosaurus",
+    "period": "Jurassic",
     "description": "Large bipedal carnivore, the most common predator of the Late Jurassic.",
     "footprints": "3-toed, clawed, typical theropod shape.",
     "teeth": "Serrated, recurved, like steak knives; shed frequently.",
@@ -28,6 +30,7 @@
   },
   {
     "name": "Ankylosaurus",
+    "period": "Cretaceous",
     "description": "Heavily armored quadrupedal herbivore, built like a living tank.",
     "footprints": "Rounded, 5-toed front, 4-toed hind; seldom preserved clearly.",
     "teeth": "Small, leaf-shaped, designed for cropping plants, not chewing.",
@@ -41,6 +44,7 @@
   },
   {
     "name": "Apatosaurus",
+    "period": "Jurassic",
     "description": "Massive long-necked quadrupedal herbivore.",
     "footprints": "Large, round/horseshoe-shaped front (1 claw), oval hind (3 claws).",
     "teeth": "Peg-like or pencil-like, only at the front of the jaw for stripping leaves.",
@@ -54,6 +58,7 @@
   },
   {
     "name": "Archaeopteryx",
+    "period": "Jurassic",
     "description": "Small, bird-like dinosaur; the 'first bird'.",
     "footprints": "Small, 3 toes pointing forward, 1 backward (anisodactyl).",
     "teeth": "Small, conical, sharp teeth (unlike modern birds).",
@@ -67,6 +72,7 @@
   },
   {
     "name": "Coelophysis",
+    "period": "Triassic",
     "description": "Small, slender, agile bipedal carnivore.",
     "footprints": "Small, 3-toed tracks (ichnogenus Grallator).",
     "teeth": "Small, sharp, serrated, recurved.",
@@ -80,7 +86,8 @@
   },
   {
     "name": "Deinonychus",
-    "description": "Wolf-sized, agile, bird-like predator; 'Terrible Claw'.",
+    "period": "Cretaceous",
+    "description": "Wolf-sized, agile, bird-like predator; 'Terrible Claw'."
     "footprints": "2-toed prints (walked on 3rd and 4th toes, 2nd toe held up).",
     "teeth": "Serrated, backward-curving.",
     "body_structures": "Large sickle-shaped claw on second toe, stiffened tail for balance, feathers.",
@@ -93,6 +100,7 @@
   },
   {
     "name": "Diplodocus",
+    "period": "Jurassic",
     "description": "Very long, slender sauropod herbivore.",
     "footprints": "Large, round front, oval hind; often no tail drag marks.",
     "teeth": "Peg-like, forward-pointing, only at front of mouth.",
@@ -106,6 +114,7 @@
   },
   {
     "name": "Iguanodon",
+    "period": "Cretaceous",
     "description": "Large, bulky herbivore that could walk on 2 or 4 legs.",
     "footprints": "3-toed, broad, blunt claws; often handprints found nearby.",
     "teeth": "Leaf-shaped with serrated edges, similar to an iguana.",
@@ -119,6 +128,7 @@
   },
   {
     "name": "Parasaurolophus",
+    "period": "Cretaceous",
     "description": "Duck-billed herbivore (hadrosaur) with a distinctive crest.",
     "footprints": "3-toed, broad, blunt; similar to other hadrosaurs.",
     "teeth": "Dental batteries containing hundreds of grinding teeth.",
@@ -132,6 +142,7 @@
   },
   {
     "name": "Plateosaurus",
+    "period": "Triassic",
     "description": "Bipedal prosauropod herbivore; ancestor to giant sauropods.",
     "footprints": "4-toed (walking), rarely handprints.",
     "teeth": "Leaf-shaped, serrated, for shredding tough plants.",
@@ -145,6 +156,7 @@
   },
   {
     "name": "Stegosaurus",
+    "period": "Jurassic",
     "description": "Large herbivore with plates and tail spikes.",
     "footprints": "5-toed front, 3-toed hind.",
     "teeth": "Small, triangular, flat, leaf-shaped; weak chewing ability.",
@@ -158,6 +170,7 @@
   },
   {
     "name": "Triceratops",
+    "period": "Cretaceous",
     "description": "Large, three-horned quadrupedal herbivore.",
     "footprints": "5-toed front, 4-toed hind; resembles giant rhino tracks.",
     "teeth": "Dental batteries with shearing teeth for tough vegetation.",
@@ -171,6 +184,7 @@
   },
   {
     "name": "Tyrannosaurus rex",
+    "period": "Cretaceous",
     "description": "Massive bipedal carnivore; apex predator.",
     "footprints": "Massive, 3-toed, clawed; ichnogenus Tyrannosauripus.",
     "teeth": "Thick, banana-shaped, serrated, designed to crush bone.",
@@ -184,6 +198,7 @@
   },
   {
     "name": "Velociraptor",
+    "period": "Cretaceous",
     "description": "Small, bird-like, agile carnivore.",
     "footprints": "2-toed (walking), similar to Deinonychus but smaller.",
     "teeth": "Sharp, serrated, recurved.",

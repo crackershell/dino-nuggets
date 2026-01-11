@@ -761,7 +761,10 @@ function renderBinder(data = allDinoData) {
         const images = dino.images || [];
         
         card.innerHTML = `
-            <h3>${dino.name}</h3>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                <h3 style="margin: 0;">${dino.name}</h3>
+                <span style="background: #2b7a78; color: #fff; padding: 4px 10px; border-radius: 20px; font-size: 0.85em; font-weight: 600;">${dino.period || 'Unknown'}</span>
+            </div>
             <div class="binder-image-placeholder"></div>
             <div class="binder-content">
                 <div class="binder-details">
