@@ -886,14 +886,14 @@ function filterBinder() {
     const periodFilter = document.getElementById('binder-period-filter').value;
 
     const filteredData = allDinoData.filter(dino => {
-        // Find corresponding entry in dinoData for metadata
+        // Find corresponding entry in dinoData for metadata (diet only)
         const meta = dinoData.find(d => d.name === dino.name);
         
         const matchesSearch = dino.name.toLowerCase().includes(searchText) || 
                               dino.description.toLowerCase().includes(searchText);
         
-        const matchesDiet = dietFilter === 'all' || (meta && meta.diet === dietFilter);
-        const matchesPeriod = periodFilter === 'all' || (meta && meta.period === periodFilter);
+        const matchesDiet = dietFilter === 'all' || (meta && meta.diet === dietFilter) || dino.diet === dietFilter;
+        const matchesPeriod = periodFilter === 'all' || dino.period === periodFilter;
 
         return matchesSearch && matchesDiet && matchesPeriod;
     });
